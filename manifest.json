@@ -1,0 +1,11 @@
+{
+  "name": "Most Reviewed Google Map Extension",
+  "description": "Sorts Google Maps places by the most reviews.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.png" 
+  }
+}
