@@ -3,7 +3,6 @@ let placesList;
 document.addEventListener('DOMContentLoaded', () => {
 
     placesList = document.getElementById('placesList');
-    console.log(placesList);
 
     document.getElementById('sortButton').addEventListener('click', async () => {
         placesList.innerHTML = ''; // Clear previous results
