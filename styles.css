@@ -43,7 +43,8 @@ button:hover {
 }
 
 #placesContainer {
-    width: 100%;
+    width: 120%; 
+    overflow-x: hidden;
     flex: 1;
     overflow-y: auto;
     margin-top: 20px;
@@ -52,6 +53,7 @@ button:hover {
 
 .places-list {
     width: 100%;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -59,25 +61,25 @@ button:hover {
 .place-item {
     display: flex;
     flex-direction: column;
-    padding: 12px;
-    text-align: left;
     background-color: #fff;
     transition: background-color 0.2s ease;
     border-top: 1px solid #e0e0e0;
+    padding: 0 5%;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    overflow-x: hidden !important;
 }
 
-.place-name {
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 4px;
+.QBUL8c {
+    background-image: url('img/ic_star_rate_14.png');
 }
 
-.place-reviews {
-    color: #5f6368;
-    font-size: 0.9em;
+.QBUL8c.vIBWLc {
+    background-image: url('img/ic_star_rate_half_14.png');
 }
 
-.place-rating {
-    color: #5f6368;
-    font-size: 0.9em;
+.QBUL8c.B53l4e {
+    background-image: url('img/ic_star_rate_empty_14.png');
 }
+

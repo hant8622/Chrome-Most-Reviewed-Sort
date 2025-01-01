@@ -7,5 +7,9 @@
   "action": {
     "default_popup": "index.html",
     "default_icon": "logo.png" 
-  }
+  },
+  "web_accessible_resources": [{
+    "resources": ["img/*"],
+    "matches": ["https://*.google.com/*"]
+  }]
 }
