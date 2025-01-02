@@ -63,23 +63,50 @@ button:hover {
     flex-direction: column;
     background-color: #fff;
     transition: background-color 0.2s ease;
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid lightgray;
     padding: 0 5%;
+    position: relative;
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
     overflow-x: hidden !important;
 }
 
+.rank-number {
+    position: absolute;
+    left: 4.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    background-color: #f5f5f5;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.Nv2PK {
+    margin-left: 17px;
+}
+
+.Nv2PK .hfpxzc {
+    left: 0 
+}
+
 .QBUL8c {
-    background-image: url('img/ic_star_rate_14.png');
+    background-image: url('img/ic_star_rate_14.png') !important;
 }
 
 .QBUL8c.vIBWLc {
-    background-image: url('img/ic_star_rate_half_14.png');
+    background-image: url('img/ic_star_rate_half_14.png') !important;
 }
 
 .QBUL8c.B53l4e {
-    background-image: url('img/ic_star_rate_empty_14.png');
+    background-image: url('img/ic_star_rate_empty_14.png') !important;
 }
 

@@ -1,8 +1,15 @@
 let placesList;
 
 document.addEventListener('DOMContentLoaded', () => {
-
     placesList = document.getElementById('placesList');
+
+    // Add event delegation for links
+    placesList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('hfpxzc')) {
+            e.preventDefault();
+            chrome.tabs.update({ url: e.target.href });
+        }
+    });
 
     document.getElementById('sortButton').addEventListener('click', async () => {
         placesList.innerHTML = ''; // Clear previous results
@@ -18,6 +25,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cleanHtml = (html) => {
                     const temp = document.createElement('div');
                     temp.innerHTML = html;
+
+                    // Preserve href attributes while cleaning
+                    temp.querySelectorAll('.hfpxzc').forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href) {
+                            link.href = new URL(href, window.location.href).href;
+                        }
+                    });
+                    
+                    // Remove elements with specified classes
+                    ['qty3Ue', 'hHbUWd', 'gwQ6lc'].forEach(className => {
+                        temp.querySelectorAll(`.${className}`).forEach(element => {
+                            element.remove();
+                        });
+                    });
+
                     
                     // Find and remove the specific sequence of .AyRUI followed by .m6QErb.XiKgde.UhIuC
                     const targetElements = temp.querySelectorAll('.m6QErb.XiKgde.UhIuC');
@@ -104,11 +127,18 @@ document.addEventListener('DOMContentLoaded', () => {
             styleElement.textContent = styles;
             document.head.appendChild(styleElement);
 
-            // Display each place
-            places.forEach(place => {
+            // Display each place with rank number
+            places.forEach((place, index) => {
                 const placeElement = document.createElement('div');
                 placeElement.className = 'place-item';
-                placeElement.innerHTML = place;
+                
+                // Add rank number
+                const rankNumber = document.createElement('div');
+                rankNumber.className = 'rank-number';
+                rankNumber.textContent = index + 1;
+                
+                placeElement.appendChild(rankNumber);
+                placeElement.insertAdjacentHTML('beforeend', place);
                 placesList.appendChild(placeElement);
             });
         } else {
