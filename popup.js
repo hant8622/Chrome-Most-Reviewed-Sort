@@ -1,8 +1,15 @@
 let placesList;
 
 document.addEventListener('DOMContentLoaded', () => {
-
     placesList = document.getElementById('placesList');
+
+    // Add event delegation for links
+    placesList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('hfpxzc')) {
+            e.preventDefault();
+            chrome.tabs.update({ url: e.target.href });
+        }
+    });
 
     document.getElementById('sortButton').addEventListener('click', async () => {
         placesList.innerHTML = ''; // Clear previous results
@@ -18,6 +25,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 const cleanHtml = (html) => {
                     const temp = document.createElement('div');
                     temp.innerHTML = html;
+
+                    // Preserve href attributes while cleaning
+                    temp.querySelectorAll('.hfpxzc').forEach(link => {
+                        const href = link.getAttribute('href');
+                        if (href) {
+                            link.href = new URL(href, window.location.href).href;
+                        }
+                    });
+                    
+                    // Remove elements with the "qty3Ue" class
+                    temp.querySelectorAll('.qty3Ue').forEach(element => {
+                        element.remove('qty3Ue');
+                    });
                     
                     // Find and remove the specific sequence of .AyRUI followed by .m6QErb.XiKgde.UhIuC
                     const targetElements = temp.querySelectorAll('.m6QErb.XiKgde.UhIuC');
