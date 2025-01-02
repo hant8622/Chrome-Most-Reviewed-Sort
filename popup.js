@@ -11,6 +11,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Add event delegation for links
+    placesList.addEventListener('click', (e) => {
+        if (e.target.classList.contains('hfpxzc')) {
+            e.preventDefault();
+            chrome.tabs.update({ url: e.target.href });
+        }
+    });
+
     document.getElementById('sortButton').addEventListener('click', async () => {
         placesList.innerHTML = ''; // Clear previous results
 
