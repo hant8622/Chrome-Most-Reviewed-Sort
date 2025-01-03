@@ -16,6 +16,12 @@ p {
     line-height: 1.4;
 }
 
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -24,7 +30,6 @@ button {
     background-color: lightgray;
     color: black;
     cursor: pointer;
-    margin: 20px 0;
     position: relative;
 }
 
