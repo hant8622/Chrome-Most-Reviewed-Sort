@@ -1,4 +1,4 @@
-![2025-02-18 23-55-32](https://github.com/user-attachments/assets/812f1fb1-a427-4dc2-abe5-41dd39c7be44)<p align="center">
+<p align="center">
   <img src="img/icon48.png" alt="Most Reviewed Sort Logo" width="48"/>
 </p>
 <h1 align="center">Most Reviewed Sort (Chrome)</h1>
@@ -21,7 +21,9 @@
 ## Extension
 ### Features
 1. Sort: Click the 'Sort!' button to begin sorting the searched places in descending order based on review count   
-2. Reset: Click the 'Reset' button to clear the current sorted places in preparation for the next sort 
+2. Reset: Click the 'Reset' button to clear the current sorted places in preparation for the next sort
+![extension-display](https://github.com/user-attachments/assets/77c8bdf1-0ee5-4496-9e2e-7434b3aef1fc)
+
 
 ### Usage
 Please make sure you're viewing your search results within Google Maps before clicking the button to sort. The sort feature will NOT work if users do not have a searched result ready or if they aren't on Google Maps at all.  
@@ -33,10 +35,10 @@ To start fresh and clear your current list of sorted places, simply click the "R
 **Before searching for new places or exploring different areas, remember to click the "Reset" button to clear your previous results and ensure accurate sorting.**
 
 While still in Google Maps, clicking on a place listed in the extension will conveniently redirect you to that location's details within Google Maps.  
-![2025-02-19 00-27-40_1](https://github.com/user-attachments/assets/2623a83c-c37c-4ffd-8990-6f7805c035a6)
+![clicking-gm](https://github.com/user-attachments/assets/2623a83c-c37c-4ffd-8990-6f7805c035a6)
 
 This extension remembers your sorted places until you click "Reset". If you're not on Google Maps and click a saved place from the extension, it will open a new Google Maps tab and display that specific location.  
-![2025-02-19 00-37-53](https://github.com/user-attachments/assets/fdb49208-ca2a-4bf6-80a8-bcc8acfe4f00)
+![clicking-not-gm](https://github.com/user-attachments/assets/fdb49208-ca2a-4bf6-80a8-bcc8acfe4f00)
 
 ---
 
