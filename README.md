@@ -29,17 +29,17 @@
 
 ## Instruction
 ### Installation
-1. Clone the repo or download it (remember to unzip it)  
+**1. Clone the repo or download it (remember to unzip it)**  
 ![repo](https://github.com/user-attachments/assets/7cfcb249-bb31-4751-aa88-6d867e743280)
 
-2. Enter this address into the URL bar in your browser
+**2. Enter this address into the URL bar in your browser**
 ```
 chrome://extensions
 ```
 
-3. Enable "Developer mode"
+**3. Enable "Developer mode"**
 
-4. Click "Load unpacked" and open the folder that you cloned/download  
+**4. Click "Load unpacked" and open the folder that you cloned/download**  
 ![extension](https://github.com/user-attachments/assets/7c2a0a38-44eb-4b19-87b5-09ffb9ca48e9)
 
 
