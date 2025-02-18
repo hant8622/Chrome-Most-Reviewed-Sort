@@ -26,18 +26,18 @@
 
 
 ### Usage
-Please make sure you're viewing your search results within Google Maps before clicking the button to sort. The sort feature will NOT work if users do not have a searched result ready or if they aren't on Google Maps at all.  
+- Please make sure you're viewing your search results within Google Maps before clicking the button to sort. The sort feature will NOT work if users do not have a searched result ready or if they aren't on Google Maps at all.  
 ![sorting](https://github.com/user-attachments/assets/5f89556c-f9c7-48a6-a0f0-079324568eb2)
 
-To start fresh and clear your current list of sorted places, simply click the "Reset" button.  
+- To start fresh and clear your current list of sorted places, simply click the "Reset" button.  
 ![resetting](https://github.com/user-attachments/assets/04d69e6c-835d-4d6f-ac70-736385c6cfb5)
 
 **Before searching for new places or exploring different areas, remember to click the "Reset" button to clear your previous results and ensure accurate sorting.**
 
-While still in Google Maps, clicking on a place listed in the extension will conveniently redirect you to that location's details within Google Maps.  
+- While still in Google Maps, clicking on a place listed in the extension will conveniently redirect you to that location's details within Google Maps.  
 ![clicking-gm](https://github.com/user-attachments/assets/2623a83c-c37c-4ffd-8990-6f7805c035a6)
 
-This extension remembers your sorted places until you click "Reset". If you're not on Google Maps and click a saved place from the extension, it will open a new Google Maps tab and display that specific location.  
+- This extension remembers your sorted places until you click "Reset". If you're not on Google Maps and click a saved place from the extension, it will open a new Google Maps tab and display that specific location.  
 ![clicking-not-gm](https://github.com/user-attachments/assets/fdb49208-ca2a-4bf6-80a8-bcc8acfe4f00)
 
 ---
