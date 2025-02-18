@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="logo.png" alt="Most Reviewed Sort Logo" width="48"/>
+  <img src="img/icon48.png" alt="Most Reviewed Sort Logo" width="48"/>
 </p>
 <h1 align="center">Most Reviewed Sort (Chrome)</h1>
 
@@ -23,7 +23,8 @@
 1. Sort: Click the 'Sort!' button to begin sorting the searched places in descending order based on review count   
 2. Reset: Click the 'Reset' button to clear the current sorted places in preparation for the next sort 
 
-## Usage
+### Usage
+Ensure you're viewing your search results within Google Maps before clicking the button to sort
 
 ---
 
@@ -42,6 +43,8 @@ chrome://extensions
 **4. Click "Load unpacked" and open the folder that you cloned/download**  
 ![extension](https://github.com/user-attachments/assets/7c2a0a38-44eb-4b19-87b5-09ffb9ca48e9)
 
+**5. Pin the extension for convenient usage**
+![pinning](https://github.com/user-attachments/assets/53c08394-1c34-4031-974b-d190366291e4)
 
 
 
